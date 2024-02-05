@@ -5,6 +5,7 @@
     "main": "main.js",
     "scripts": {
         "build": "webpack",
+        "build:prod": "webpack  --env mode=production",
         "start": "webpack serve",
         "lint:ts": "eslint \"**/*.{ts,tsx}\"",
         "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",

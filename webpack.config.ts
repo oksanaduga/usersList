@@ -95,7 +95,7 @@ const config = (env: EnvVariables): webpack.Configuration => {
             }
         },
         devtool: isDev ? 'inline-source-map' : undefined,
-        devServer: {
+        devServer: isDev ? {
             historyApiFallback: true,
             static: {
                 directory: path.join(__dirname, 'public')
@@ -103,10 +103,10 @@ const config = (env: EnvVariables): webpack.Configuration => {
             port: 9000,
             hot: true,
             open: true
-        }
+        } : undefined
     }
 
-        return webpackConfig
+    return webpackConfig
 }
 
 export default config
