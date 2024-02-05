@@ -1,0 +1,14 @@
+@import "reset";
+@import "theme";
+@import "variables";
+
+body {
+    font: var(--font-m);
+}
+
+.app { 
+    color: var(--primary-color);
+    min-height: 100vh;
+    background: var(--bg-color);
+    padding: 34px 25px;
+}

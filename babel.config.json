@@ -1,0 +1,13 @@
+// если нужен где-то помимо вебпака, то можно вынести из вебпака эту часть сюда
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-typescript",
+        [
+            "@babel/preset-react",
+            {
+                "runtime": "automatic"
+            }
+        ]
+    ]
+}

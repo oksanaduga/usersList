@@ -1,0 +1,29 @@
+.OrganizationCard {
+    position: relative;
+    background-color: var(--inverted-bg-color);
+    padding: 16px 24px;
+    border-radius: 17px;
+    margin: 25px 34px;
+    display: flex;
+    flex-direction: column;
+}
+
+.organizationName {
+    margin: 24px 0;
+}
+
+.line {
+    position: absolute;
+    border: 1px solid var(--light-grey);
+    width: 100%;
+    margin-left: -24px;
+    margin-top: 70px 
+}
+
+.title {
+    margin: 29px 0 24px 0;
+}
+
+.pagination {
+    margin: auto;
+}

@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "outDir": "./build",
+        "noImplicitAny": true,
+        //"module": "es6",
+        "module": "esnext",
+        "target": "es5",
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "moduleResolution": "node",
+
+        "sourceMap": true,
+
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+
+        "skipLibCheck": true, // из примера начало
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": false, // из примера конец
+
+        "paths": {
+            "@/*": ["./src/*"],
+        },
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS",
+        },
+    },
+}

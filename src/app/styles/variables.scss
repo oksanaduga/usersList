@@ -1,0 +1,36 @@
+:root {
+    --font-family-main: courier, helvetica, sans-serif;
+
+    // xs
+    --font-size-xs: 12px;
+    --font-line-xs: 16px;
+    --font-weight-xs: 400;
+    --font-xs: var(--font-weight-xs) var(--font-size-xs) / var(--font-line-xs) var(--font-family-main);
+
+    // s
+    --font-size-s: 14px;
+    --font-line-s: 18px;
+    --font-weight-s: 500;
+    --font-s: var(--font-weight-s) var(--font-size-s) / var(--font-line-s) var(--font-family-main);
+
+    // m
+    --font-size-m: 16px;
+    --font-weight-m: 500;
+    --font-line-m: 22px;
+    --font-m: var(--font-weight-m) var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+
+    // l
+    --font-size-l: 22px;
+    --font-weight-l: 600;
+    --font-line-l: 29px; 
+    --font-l: var(--font-weight-l) var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+
+    // [font-style||font-variant||font-weight] font-size [/line-height] font-family | inherit
+
+    // colors
+    --light-grey: #222B44;
+    --dark-grey: #313E62;
+    --grey: #616D8D;
+    --error-color: #f41b1b;
+    --blue: #1C64F2;
+}

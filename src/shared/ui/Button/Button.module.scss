@@ -1,0 +1,29 @@
+.Button {
+    // padding: 10px;
+    background: var(--blue);
+    border-radius: 8px;
+    margin: 2px;
+    height: 34px;
+    width: 38px;
+
+    &:hover {
+        opacity: 80%;
+        transform: scale(95%);
+    }
+
+    &:active {
+        background: #239ffd;
+        transform: background-color 0.6s, scale(95%);
+    }
+}
+
+.clear {
+    background: none;
+    height: 24px;
+    width: 32px;
+
+    &:hover {
+        opacity: 90%;
+        background: var(--light-grey);
+    }
+}

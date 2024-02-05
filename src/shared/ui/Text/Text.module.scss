@@ -1,0 +1,67 @@
+.title {
+    color: var(--primary-color);
+}
+
+.text {
+    color: var(--primary-color);
+}
+
+.secondary {
+    .title {
+        color: var(--secondary-color);
+    }
+    
+    .text {
+        color: var(--secondary-color);
+    }
+}
+
+.error {
+    .title {
+        color: var(--error-color);
+    }
+    
+    .text {
+        color: var(--error-color);
+    }
+}
+
+.xs {
+    .title {
+        font: var(--font-s);
+    }
+    .text {
+        font: var(--font-xs);
+    }
+}
+
+.s {
+    .title {
+        font: var(--font-m);
+    }
+    .text {
+        font: var(--font-s);
+    }
+}
+
+.m {
+    .title {
+        font: var(--font-l);
+    }
+    .text {
+        font: var(--font-m);
+    }
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+.alignRight {
+    text-align: right;
+}
+
