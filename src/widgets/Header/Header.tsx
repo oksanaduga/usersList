@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import cls from './Header.module.scss';
 import { Text } from '@/shared/ui/Text';
 
-import OrganizationLabel from '@/shared/assets/organization.svg';
+import OrganizationLabel from '@/shared/assets/organization.svg?react';
 import { Card } from '@/widgets/Card';
 import { Label } from '../../shared/ui/Label';
 

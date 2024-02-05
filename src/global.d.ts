@@ -4,7 +4,7 @@ declare module '*.scss' {
     export = classNames;
 }
 
-declare module '*.svg' {
+declare module '*.svg?react' {
     import type * as React from 'react';
 
     const ReactComponent: React.FunctionComponent<

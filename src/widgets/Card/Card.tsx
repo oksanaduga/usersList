@@ -1,16 +1,16 @@
-import classNames from 'classnames'
-import cls from './Card.module.scss'
-import { Text, TextTheme } from '@/shared/ui/Text'
-import Avatar from '@/shared/assets/default-avatar.svg'
-import { Icon } from '@/shared/ui/Icon'
-import { useAppSelector } from '@/shared/store/hooks/hook'
+import classNames from 'classnames';
+import cls from './Card.module.scss';
+import { Text, TextTheme } from '@/shared/ui/Text';
+import Avatar from '@/shared/assets/default-avatar.svg?react';
+import { Icon } from '@/shared/ui/Icon';
+import { useAppSelector } from '@/shared/store/hooks/hook';
 
 interface CardProps {
-  className?: string
+    className?: string;
 }
 export const Card = ({ className }: CardProps) => {
-  const userRole = useAppSelector((state) => state.user.data?.role)
-  return (
+    const userRole = useAppSelector((state) => state.user.data?.role);
+    return (
         <div className={classNames(cls.Card, className)}>
             <Icon Svg={Avatar} width={'32'} height={'32'} />
             <div>
@@ -19,8 +19,8 @@ export const Card = ({ className }: CardProps) => {
                     theme={TextTheme.SECONDARY}
                     size={'xs'}
                 />
-                {(userRole != null) && <Text title={userRole} size={'xs'} />}
+                {userRole != null && <Text title={userRole} size={'xs'} />}
             </div>
         </div>
-  )
-}
+    );
+};
